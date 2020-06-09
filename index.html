@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>INICIO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/miStilo.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background-color: #fca0c7;
+        }
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 450px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #fca0c7;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #fca0c7;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 700px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+
+        body { 
+            background-color: #fbbcd9; 
+        }
+        .active{
+            background-color: #ff5da0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" id="textoGrande">Postres Niña Isle</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="paginas/productos.html">Productos</a></li>
+                    <li><a href="paginas/contactanos.html">Contactanos</a></li>
+                    <li><a href="paginas/acercade.html">Acerca de...</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-10 text-left">
+
+                <br>
+                <hr>
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" style="text-align: center;">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" style="text-align: center;">
+
+                        <div class="item active">
+                            <img src="imagenes/Cakes-cream-raspberries-strawberries-cherries_1920x1200.jpg"
+                                alt="vainilla"  width="800" height="1800">
+                            <div class="carousel-caption">
+                                <h3>Delicioso postre de vainilla</h3>
+                                <p>Cakes cream raspberries</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="imagenes/delicioso-pastel-de-fresas-chantilly-y-chocolate.jpeg" alt="fresas"
+                            width="800" height="1800">
+                            <div class="carousel-caption">
+                                <h3>Delicioso postre de fresas</h3>
+                                <p>delicioso pastel de fresas chantilly y chocolate</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="imagenes/Chocolate-cake-slices-dessert_m.jpg" alt="chocolate"  width="800" height="1800">
+                            <div class="carousel-caption">
+                                <h3>Delicioo postre de chocolate dessert</h3>
+                                <p>Chocolate cake slices dessert</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+
+
+                <h1 style="text-align: center;">Bienvenido</h1>
+                <p style="text-align: center;">
+                    Disfruta de los mejores postres que la niña Isle tiene para ti
+                </p>
+                <hr>
+            </div>
+
+
+            <div class="col-sm-2 sidenav">
+
+                <h2 style="font-family:Lucida Calligraphy;">Nuestro postre del dia</h2>
+                <p>Delicioso postre de Maracuya:</p>
+                <img src="imagenes/maracuya.jpeg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+                <p>Rico postre bañanado en salsa de maracuya</p>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Todos lod derechos resrvados CECAR 2020-1</p>
+        <p>Autor: Kenedy Perez</p>
+    </footer>
+
+</body>
+
+</html>

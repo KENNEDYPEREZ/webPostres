@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PRODUCTOS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="../css/miStilo.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/funciones.js"></script>
+
+
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background-color: #fca0c7;
+        }
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 450px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #fca0c7;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #fca0c7;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+
+        body { 
+            background-color: #fbbcd9; 
+        }
+
+        .active{
+            background-color: #ff5da0;
+        }
+    </style>
+</head>
+
+<body onload="precios();">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html" id="textoGrande">Postres Niña Isle</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="acercade.html">Acerca de...</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Productos</h1>
+            <p>Disfruta de la mejor calidad en postres <b>los mejores postres de la region</b></p>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h3>Esto es lo que tenemos para ti</h3>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <p style="text-transform: uppercase;">Chocolate.</p>
+                <img src="../imagenes/chocolate.jpeg" class="img-rounded" width="300" height="200" alt="chocolate">
+                <hr>
+                <p>Valor:</p> <b id="p1">$4,000.00</b>
+            </div>
+            <div class="col-sm-3">
+                <p style="text-transform: uppercase;">ChocoChips</p>
+                <img src="../imagenes/chochoChips.jpeg" class="img-rounded" width="300" height="200" height="300" alt="ChocoChips">
+                <hr>
+                <p>Valor:</p> <b id="p2">$4,000.00</b>
+            </div>
+            <div class="col-sm-3">
+                <p style="text-transform: uppercase;">Cafe</p>
+                <img src="../imagenes/cafe.jpeg" class="img-rounded" width="300" height="200" alt="cafe">
+                <hr>
+                <p>Valor:</p> <b id="p3">$4,000.00</b>
+            </div>
+            <div class="col-sm-3">
+                <p style="text-transform: uppercase;">Postre frio de limón</p>
+                <img src="../imagenes/postreFrio_de_Limon.jpeg" class="img-rounded" width="300" height="200" style="width:100%" alt="postreFrio_de_Limon">
+                <hr>
+                <p>Valor:</p> <b id="p4">$4,000.00</b>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container-fluid bg-3 text-center">
+        <div class="row">
+            <div class="col-sm-3">
+                <p style="text-transform: uppercase;">Mango</p>
+                <img src="../imagenes/mango.jpeg" class="img-rounded" width="300" height="200" alt="mango">
+                <hr>
+                <p>Valor:</p> <b id="p5">$4,000.00</b>
+            </div>
+            <div class="col-sm-3">
+                <p style="text-transform: uppercase;">Maracuya</p>
+                <img src="../imagenes/maracuya.jpeg" class="img-rounded" width="300" height="200" alt="maracuya">
+                <hr>
+                <p>Valor:</p> <b id="p6">$4,000.00</b>
+            </div>
+        </div>
+    </div><br><br>
+
+    <footer class="container-fluid text-center">
+        <p>Todos los derechos reservados 2020</p>
+        <p>Autor: Kenedy Perez</p>
+    </footer>
+
+</body>
+
+</html>
